@@ -38,7 +38,7 @@ namespace Leave_Management.Web.Repositories
             return await context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetAsync(int id)
+        public async Task<T?> GetAsync(int? id)
         {
             return await context.Set<T>().FindAsync(id);
         }
